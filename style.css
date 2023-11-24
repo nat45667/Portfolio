@@ -1,9 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
 .navigation
 {
     text-align: right;
     padding: 10px;
+    background-color: #eac683;
+    position: fixed;
+    width: 100%;
 }
-
+.Skills {
+    padding-top: 40px;
+}
+.Project {
+    padding-top: 40px;
+}
+.Home-1{
+    padding-top: 40px;
+}
 .navbar,.profile
 {
    display: inline;
@@ -24,7 +43,7 @@ a:hover
 
 h1
 {
-    margin-top: 70px;
+    margin-top: 0;
     text-align: center;
     font-size: 80px;
 }
@@ -45,19 +64,76 @@ body{
     margin-top: 120px;
 }
 
-p{
+p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     height: 100px;
-    width: 900px;
+    max-width: 900px; /* Changed width to max-width for better responsiveness */
     text-align: center;
     background-color: blanchedalmond;
-    margin-left: 500px;
-    padding: 30px;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 15px; /* Adjusted padding */
     border-radius: 5px;
     border: none;
     font-size: larger;
+    color: rgb(140, 128, 128);
+    height: auto;
 }
-button{
-    margin-left: 900px;
-    width: 100px;
-    height: 50px;
+
+.dic{
+    align-items: center;
+}
+.vids, .skill-img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  .vids video {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .vids video:hover{
+    scale: 1.05;
+  }
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 70px;
+    margin: 20px auto 0; /* Center horizontally and add margin from the top */
+    border: none;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+button:hover
+{
+    font-weight: bolder;
+    background-color: beige;
+}
+.skill-img img{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 30px;
+    transition: 90ms linear;
+    cursor: pointer;
+}
+.skill-img img:hover{
+    scale: 1.05;
 }
